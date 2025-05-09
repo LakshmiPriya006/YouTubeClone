@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.content-container > * {
+  overflow-y: auto;
+}
+
+main.main-content {
+  flex: 1;
+  padding: 1rem;
+  color: white;
+  background-color: #121212; /* Adjust as needed */
+}
+
+.YouTubeSidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #202020; /* Adjust as needed */
+  color: white;
+}
