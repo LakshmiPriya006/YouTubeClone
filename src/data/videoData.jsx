@@ -1,7 +1,7 @@
 export const videoData = [
     {
       id: 1,
-      title: "How to Build AI Agents: Full Guide + n8n Masterclass",
+      title: "How to Build AI Agents: Full Guide + n8n Masterclass",     
       channel: "Bo Sar",
       thumbnail: "https://picsum.photos/320/180?random=1",
       channelImage: "https://picsum.photos/36/36?random=11",

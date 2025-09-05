@@ -4,7 +4,6 @@ import { CheckCircle } from "lucide-react";
 const VideoCard = ({ video }) => {
   const handleClick = () => {
     console.log(`Clicked on: ${video.title} by ${video.channel}`);
-    // Here you would typically navigate to the video page
   };
 
   return (
@@ -12,7 +11,7 @@ const VideoCard = ({ video }) => {
       className="cursor-pointer transition-transform hover:scale-[1.02]" 
       onClick={handleClick}
     >
-      {/* Thumbnail with duration */}
+
       <div className="relative mb-2">
         <img 
           src={video.thumbnail} 
@@ -24,9 +23,7 @@ const VideoCard = ({ video }) => {
         </div>
       </div>
       
-      {/* Video info section */}
       <div className="flex">
-        {/* Channel image */}
         <div className="mr-3">
           <img 
             src={video.channelImage} 
@@ -35,14 +32,11 @@ const VideoCard = ({ video }) => {
           />
         </div>
         
-        {/* Title and metadata */}
         <div className="flex-1">
-          {/* Title - line clamp to 2 lines */}
           <h3 className="text-white font-medium text-sm mb-1 line-clamp-2">
             {video.title}
           </h3>
-          
-          {/* Channel name with verified badge if needed */}
+
           <div className="flex items-center text-gray-400 text-xs">
             {video.channel}
             {video.verified && (
@@ -50,7 +44,6 @@ const VideoCard = ({ video }) => {
             )}
           </div>
           
-          {/* Views and upload date */}
           <div className="text-gray-400 text-xs">
             {video.views} • {video.uploadDate}
           </div>

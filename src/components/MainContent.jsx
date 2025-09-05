@@ -6,16 +6,13 @@ import VideoGrid from "./VideoGrid";
 const MainContent = ({ searchTerm = "", activeCategory = "All"  }) => {
   const [filteredVideos, setFilteredVideos] = useState(videoData);
 
-  // Filter videos based on category and search term
   useEffect(() => {
     let results = videoData;
     
-    // Filter by category
     if (activeCategory !== "All") {
       results = results.filter(video => video.category === activeCategory);
     }
     
-    // Filter by search term if provided
     if (searchTerm.trim()) {
       const term = searchTerm.toLowerCase();
       results = results.filter(

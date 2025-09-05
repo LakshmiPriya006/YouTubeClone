@@ -11,7 +11,6 @@ export default function Header({ onSearchSubmit }) {
 
   return (
     <header className="fixed top-0 left-0 right-0 flex items-center justify-between px-4 py-2 bg-black border-b border-gray-200 z-50 h-[60px]">
-      {/* Left section: Menu and Logo */}
       <div className="flex items-center">
         <button className="p-2 mr-2 rounded-full hover:bg-black-400">
           <Menu size={20} />
@@ -22,8 +21,6 @@ export default function Header({ onSearchSubmit }) {
           </div>
         </div>
       </div>
-
-      {/* Middle section: Search bar */}
       <div className="hidden md:flex items-center flex-1 max-w-xl mx-4">
         <form onSubmit={handleSubmit} className="flex w-full">
           <input
@@ -45,11 +42,7 @@ export default function Header({ onSearchSubmit }) {
         </button>
       </div>
 
-      {/* Right section: Icons */}
       <div className="flex items-center">
-        {/* <button className="p-2 rounded-full text-white hover:bg-gray-100 md:hidden">
-          <Search size={20} />
-        </button> */}
         <button className="p-2 rounded-full hover:bg-black-400">
           <Upload size={20} />
         </button>

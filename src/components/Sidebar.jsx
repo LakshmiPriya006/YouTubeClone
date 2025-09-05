@@ -31,7 +31,6 @@ export default function YouTubeSidebar({ categories, activeCategory, setActiveCa
 
   return (
     <div className="fixed top-14 left-0 w-56 h-[calc(100vh-60px)] overflow-y-auto bg-black text-white p-3 border-r border-gray-800 pb-6">
-      {/* Main Menu Section */}
       <div className="mb-4">
         {mainMenuItems.map((item, index) => (
           <div 
@@ -46,10 +45,8 @@ export default function YouTubeSidebar({ categories, activeCategory, setActiveCa
         ))}
       </div>
       
-      {/* Divider */}
       <div className="h-px bg-gray-700 my-2"></div>
-      
-      {/* Categories Section */}
+
       <div className="mb-2">
         <div className="px-3 py-1 text-xs text-gray-400 font-medium">Categories</div>
         {categories.map((category) => (
@@ -64,7 +61,6 @@ export default function YouTubeSidebar({ categories, activeCategory, setActiveCa
         ))}
       </div>
       
-      {/* Footer */}
       <div className="absolute bottom-2 left-0 right-0 px-4 text-xs text-gray-500">
         © 2025 YouTube Clone
       </div>
